@@ -1,6 +1,6 @@
 'use strict'
 
-expots.wrap = function (name, value) {
+exports.wrap = function (name, value) {
 	return `<span class="glyph ${name}">${value}</span>`
 }
 
