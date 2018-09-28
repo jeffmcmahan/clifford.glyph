@@ -1,7 +1,7 @@
 'use strict'
 
 exports.wrap = function (name, value) {
-	return `<span class="glyph ${name}">${value}</span>`
+	return `<span class="glyph ${name}">${value || '?'}</span>`
 }
 
 exports.map = {
@@ -57,6 +57,7 @@ exports.map = {
 	integral: '∫',
 	integer: 'ℤ',
 	leftCorner: '⌈',
+	micro: 'µ',
 	multiplication:'×',
 	natural: 'ℕ',
 	negation: '¬',
@@ -84,6 +85,7 @@ exports.map = {
 	beth: 'ℶ',
 	delta: 'δ',
 	Delta: '∆',
+	mu: 'µ',
 	nabla: '∇',
 	sigma: 'σ',
 	Signma: '∑'
