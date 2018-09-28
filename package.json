@@ -1,0 +1,11 @@
+{
+	"name": "clifford.glyph",
+	"version": "0.0.1",
+	"description": "Provide ",
+	"main": "./index.cfd",
+	"directories": {},
+	"dependencies": {},
+	"scripts": {},
+	"author": "Jeff McMahan",
+	"license": "GNU GPLv3"
+}

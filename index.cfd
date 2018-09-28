@@ -1,0 +1,23 @@
+import (wrap, map, acuteMap, graveMap): ./utils.js as module
+
+/// Fetches a glyph of the given name and returns a classed <span> containing it.
+def glyph: inline function glyph(doc, scope, name) {
+	return wrap(name, map[name])
+}
+
+/// Fetches the given glyph with an accute accent added.
+def acute: inline function acute(doc, scope, char) {
+	char = char.trim()
+	const markup = wrap(char, acuteMap[char])
+	return markup
+}
+
+/// Fetches the given glyph with an grave accent added.
+def grave: inline function grave(doc, scope, char) {
+	return wrap(char, graveMap[char])
+}
+
+/// Returns the given string in a span with an overline.
+def bar: inline function bar(doc, scope, char) {
+	return `<span class="glyph bar ${char}" style="text-decoration:overline">${char}</span>`
+}
