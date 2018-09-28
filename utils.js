@@ -10,20 +10,21 @@ exports.map = {
 	ash: 'æ',
 	Ash: 'Æ',
 	asterism:'⁂',
-	copyright:'©',
-	registered:'®',
-	numero:'№',
-	pilcrow:'¶',
 	blackSquare: '■',
 	bullet:'•',
+	copyright:'©',
 	dagger:'†',
 	degree:'°',
 	doubleDagger:'‡',
+	emDash:'—',
+	enDash:'–',
+	eszett: 'ß',
+	numero:'№',
+	pilcrow:'¶',
+	registered:'®',
 	section:'§',
 	serviceMark:'℠',
 	trademark:'™',
-	emDash:'—',
-	enDash:'–',
 
 	// Financial
 	basisPoint:'‱',
@@ -109,8 +110,24 @@ exports.acuteMap = {
 	r: 'ŕ'
 }
 
-
 exports.graveMap = {
-	a: 'à'
-	// ...
+	a: 'à',
+	A: 'À',
+	E: 'È',
+	e: 'è',
+	I: 'Ì',
+	i: 'ì',
+	O: 'Ò',
+	o: 'ò',
+	U: 'Ù',
+	u: 'ù'
+}
+
+exports.umlautMap = {
+	a: 'ä',
+	A: 'Ä',
+	o: 'ö',
+	O: 'Ö',
+	u: 'ü',
+	U: 'Ü'
 }

@@ -11,8 +11,13 @@ def glyph: inline function glyph(doc, scope, ...args) {
 	// Acute accented
 	function acute(char) {
 		char = char.trim()
-		const markup = wrap(char, acuteMap[char])
-		return markup
+		return wrap(char, acuteMap[char])
+	}
+
+	// German umlaut vowels
+	function umlaut(char) {
+		char = char.trim()
+		return wrap(char, umlautMap[char])
 	}
 
 	// Bar overtop of the given character.
@@ -31,5 +36,8 @@ def glyph: inline function glyph(doc, scope, ...args) {
 	}
 	if (args[0] === 'bar') {
 		return bar(args[1])
+	}
+	if (args[0] === 'umlaut') {
+		return umlaut(args[1])
 	}
 }
