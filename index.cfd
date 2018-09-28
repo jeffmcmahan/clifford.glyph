@@ -21,7 +21,7 @@ def glyph: inline function glyph(doc, scope, ...args) {
 	}
 
 	if (args.length === 1) {
-		return wrap(name, map[name])
+		return wrap(args[0], map[args[0]])
 	}
 	if (args[0] === 'grave') {
 		return grave(args[1])
