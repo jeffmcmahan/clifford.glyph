@@ -1,7 +1,7 @@
 import (wrap, map, acuteMap, graveMap): ./utils.js as module
 
 /// Fetches a glyph of the given name and returns a classed <span> containing it.
-def glyph: inline function glyph(doc, scope, ...args) {
+def glyph: inline function glyph(doc, ...args) {
 
 	// Grave accented
 	function grave(char) {
